@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: quarkus-tech-talk
+spec:
+  runLatest:
+    configuration:
+      revisionTemplate:
+        metadata:
+          labels:
+            app: quarkus-tech-talk
+        spec:
+          container:
+            image: docker.io/nfkdata/quarkus-tech-talk:latest

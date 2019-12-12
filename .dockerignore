@@ -1,0 +1,11 @@
+target/
+.idea/
+.mvn/
+.dockergitignore
+.gitignore
+mvnw*
+quarkus.iml
+
+!target/*-runner
+!target/*-runner.jar
+!target/lib/*
